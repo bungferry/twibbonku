@@ -8,4 +8,4 @@ Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.
 
 # Demo
 
-![Preview](twibbonku/img/preview.png)
+![Preview](/img/preview.png)
