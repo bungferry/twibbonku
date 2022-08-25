@@ -22,39 +22,29 @@ img,canvas{
   height:auto;
 }
 
-.form-group{
-  width:100%;
-  display:block;
-  position:relative;
-  margin-bottom:10px;
+.input-file{
+    background-color: #f8f9fc;
+    border: 1px solid #e2e9f3;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    color: #565A90;
 }
-.file-control{
-  display:none;
+.input-file::file-selector-button{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #595ef1bd;
+    border: 1px solid #595ef1bd;
+    height: 40px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    cursor: pointer;
 }
-.label-file{
-  width:100%;
-  height:40px;
-  display:inline-block;
-  position:relative;
-  background-color:#fff;
-  padding:5px 50px 5px 15px;
-  border-radius:4px;
-  border:2px solid #42a5f5;
-  vertical-align: middle;
-  overflow:hidden;
-  line-height:30px;
-}
-.label-file:after{
-  content: "Browse";
-  position: absolute;
-  background-color:#42a5f5;
-  right:0;
-  top:0;
-  height: 29px;
-  display: inline-block;
-  padding: 8px 15px 0;
-  color:#fff;
-  line-height:20px;
+.input-file::file-selector-button:hover{
+    background-color: #fff;
+    color: #565A90;
+    transition: all .25s ease-in;
 }
 </style>
 
@@ -73,23 +63,11 @@ img,canvas{
     <p>Pilih file gambar dan bingkai dari komputer Anda.</p>
     <p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
 
-
-     <p><div class = "form-group">
-      <input type="file" name="file1[]" data-multiple-caption="{count} files selected" class="file-control" multiple              id="file1">
-      <label for="file1" class="label-file" ><span>Choose file</span></label>
-     </div></p>
-
     <p>Unggah Gambar:</p>
-    <p><label class="inputFile">
-    <span class="inputFile-custom"></span>
     <input type="file" accept="image/*" onchange="loadFile(event)">
-    </label></p>
 
     <p>Unggah Bingkai:</p>
-    <p><label class="inputFile">
-    <span class="inputFile-custom"></span>
     <input type='file' accept="image/*" onchange="loadTemplate(event)">
-    </label></p>
 
     <p>
     <button onclick="gen()" class="button-3" role="button"><i class="far fa-eye"></i> PRATINJAU</button> 
