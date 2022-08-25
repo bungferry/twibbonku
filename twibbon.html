@@ -49,6 +49,16 @@
     </p>
 
     <p>
+    <input type="text" id="filename" autocomplete="off" readonly="" placeholder="No files uploaded.">
+    <br />
+    <img id="bingkai" alt="Bingkai">
+    <label for="fileInput" class="custom-file-upload">
+    <i class="text-button"></i> <i class="far fa-images"></i> UNGGAH BINGKAI
+    <input type='file' accept="image/*" onchange="loadTemplate(event)">
+    </label>
+    </p>
+
+    <p>
     <a href="#" id="unduh" download="magg.netlify.app.png" style="display: none" class="button-3" role="button"><i class="fa fa-download"></i> DOWNLOAD</a>
     <button id="klik" onclick="drawImage()" class="button-3" role="button"><i class="far fa-eye"></i> PREVIEW</button> 
     <button id="cancel" onclick="location.reload()" class="button-4" role="button" style="color:red"><i class="fas fa-trash-alt"></i> DELETE</button>
