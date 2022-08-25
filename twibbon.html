@@ -32,17 +32,9 @@
     <p>This is a website where you can add photos to frames.</p>
     <p>Select a file from your computer.</p>
     <p>You can upload various sizes of images from your hard drive.</p>
-    
-    <p>
-    <!--
-    <img id="preview" src="/img/preview.png"/>
-    <img id="twibbon" src="/img/twibbon.png" style="display: none"/>
-    <canvas id="jilah"></canvas>
-    -->
-    <p>
 
     <p>
-    <input type="text" autocomplete="off" readonly="" placeholder="No files uploaded.">
+    <input type="text" id="filename" autocomplete="off" readonly="" placeholder="No files uploaded.">
     <br />
     <img id="avatar" alt="Avatar" style="display: none"/>
     <label for="fileInput" class="custom-file-upload">
@@ -52,7 +44,7 @@
     </p>
 
     <p>
-    <input type="text" autocomplete="off" readonly="" placeholder="No files uploaded.">
+    <input type="text" id="filename" autocomplete="off" readonly="" placeholder="No files uploaded.">
     <br />
     <img id="bingkai" alt="Bingkai" style="display: none"/>
     <label for="fileInput" class="custom-file-upload">
@@ -89,8 +81,7 @@
 <canvas id="canvas"></canvas>
 </p>
 <p>
-<a class="simple-button-reverse simple-button-reverse-primary" href="#" id="download" download="TWIBBON.PAGES.DEV.png" style="display: none">Unduh</a>
-<button type="button" class="simple-button-reverse simple-button-reverse-warning" id="cancel" onclick="location.reload()">Hapus</button> 
+<button type="button" class="button-4" id="btndownload" style="color:green">UNDUH</button> 
 </p>
 </div>
 </div>
