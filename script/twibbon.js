@@ -1,5 +1,7 @@
+/* app.js */
+
 var loadFile = function(event) {
-    var output = document.getElementById('img1');
+    var output = document.getElementById('avatar');
     output.src = URL.createObjectURL(event.target.files[0]);
     output.onload = function() {
     URL.revokeObjectURL(output.src)
@@ -7,7 +9,7 @@ var loadFile = function(event) {
   };
 
   var loadTemplate = function(event) {
-    var output = document.getElementById('gambartemplate');
+    var output = document.getElementById('bingkai');
     output.src = URL.createObjectURL(event.target.files[0]);
     output.onload = function() {
     URL.revokeObjectURL(output.src)
@@ -17,9 +19,9 @@ var loadFile = function(event) {
   function gen() {
       alert("clicked");
       // Mensetting Variabel
-        var img1 = document.getElementById('img1');
+        var img1 = document.getElementById('avatar');
         console.log(img1);
-        var img2 = document.getElementById('gambartemplate');
+        var img2 = document.getElementById('bingkai');
         console.log(img2);
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext("2d");
