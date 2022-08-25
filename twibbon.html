@@ -16,7 +16,47 @@
     <link integrity="" rel="stylesheet" href="/css/button.css">
     <link integrity="" rel="stylesheet" href="/css/modals.css">
 
-    <style>img,canvas{width:100%;height:auto;}.inputFile{position:relative;display:inline-block;cursor:pointer;height:1.5rem;}.inputFile input{margin:0;filter:alpha(opacity=0);opacity:0;}.inputFile-custom{text-align:left;position:absolute;top:0;right:0;left:0;z-index:5;height:1.5rem;padding:.5rem1rem;line-height:1.5;color:#333;background-color:#fff;border:1pxsolid#fff;border-radius:3px;box-shadow:inset0.5px.5pxrgba(0,0,0,.05);user-select: none;}.inputFile-custom:before{position:absolute;top:-1px;right:-1px;bottom:-1px;z-index:6;display:block;content:" Browse ";height:1.5rem;padding:.5rem1rem;line-height:1.5;color:#333;background-color:#fff;border:1pxsolid #333;border-radius:03px3px0;}.inputFile-custom:after{content:" Choose file... ";}</style>
+<style>
+img,canvas{
+  width:100%;
+  height:auto;
+}
+
+.form-group{
+  width:100%;
+  display:block;
+  position:relative;
+  margin-bottom:10px;
+}
+.file-control{
+  display:none;
+}
+.label-file{
+  width:100%;
+  height:40px;
+  display:inline-block;
+  position:relative;
+  background-color:#fff;
+  padding:5px 50px 5px 15px;
+  border-radius:4px;
+  border:2px solid #42a5f5;
+  vertical-align: middle;
+  overflow:hidden;
+  line-height:30px;
+}
+.label-file:after{
+  content: "Browse";
+  position: absolute;
+  background-color:#42a5f5;
+  right:0;
+  top:0;
+  height: 29px;
+  display: inline-block;
+  padding: 8px 15px 0;
+  color:#fff;
+  line-height:20px;
+}
+</style>
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
@@ -32,6 +72,12 @@
     <p>Unggah karya seni Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB.</p>
     <p>Pilih file gambar dan bingkai dari komputer Anda.</p>
     <p>Anda dapat mengunggah berbagai ukuran gambar dari hard drive Anda.</p>
+
+
+     <p><div class = "form-group">
+      <input type="file" name="file1[]" data-multiple-caption="{count} files selected" class="file-control" multiple              id="file1">
+      <label for="file1" class="label-file" ><span>Choose file</span></label>
+     </div></p>
 
     <p>Unggah Gambar:</p>
     <p><label class="inputFile">
